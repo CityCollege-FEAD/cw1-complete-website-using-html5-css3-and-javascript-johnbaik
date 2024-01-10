@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CityFlix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logo/tab-logo.jpg">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/actors.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/filters.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="header" id="header">
+    <section class="header-logo-search" id="header-logo-search">
+        <a href="index.html">
+            <img class="logo" id="logo" src="../images/logo/Cityflix.jpg" alt="logo">
+        </a>
+        <section class="search" id="search">
+            <i class="material-symbols-outlined" id="searchIcon"> search </i>
+            <label for="search-input" hidden>
+                search
+            </label>
+            <input type="search" class="search-input" id="search-input" placeholder="Find Movies and Series">
+            <button class="close-search-bar-button" id="close-search-bar-button"
+                    onclick="changeSearchVisibility()"><i class="material-symbols-outlined">close</i>
+            </button>
+            <ul class="header-search-list" id="header-search-list">
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie0.webp" alt="movie 1">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                Fist of Fury
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997</p>
+
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie2.webp" alt="movie 2">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                Scrooge
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+
+                        <img class="header-search-item-img" src="../images/movies/movies/movie3.webp" alt="movie 3">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                FernGully: The Last Rainforest
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie4.webp" alt="movie 4">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                FernGully: The Last Rainforest
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie5.webp" alt="movie 5">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                FernGully: The Last Rainforest
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie6.webp" alt="movie 6">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                FernGully: The Last Rainforest
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+                <li class="header-search-item">
+                    <section class="header-search-item-section">
+                        <img class="header-search-item-img" src="../images/movies/movies/movie7.webp" alt="movie 7">
+                        <section class="header-search-item-info">
+                            <h1 class="header-search-item-movie-title">
+                                FernGully: The Last Rainforest
+                            </h1>
+                            <p class="header-search-item-movie-info">
+                                Movie | 1997
+                            </p>
+                        </section>
+                    </section>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <nav class="header-navbar" id="header-navbar">
+        <ul class="header-navbar-list" id="header-navbar-list">
+            <li class="navbar-list-item">
+                <a class="navbar-list-item-ref" href="movies.html">Movies</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-list-item-ref" href="actors.html">Actors</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-list-item-ref" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="navbar-list-item">
+                <a class="navbar-list-item-ref" href="contact-us.html">Contact</a>
+            </li>
+        </ul>
+        <button class="search-button" id="search-button" onclick="changeSearchVisibility()">
+            <i class="material-symbols-outlined">
+                search
+            </i>
+        </button>
+        <button class="hamburger-button" id="hamburger-button" onclick="changeHamburgerMenuVisibility()">
+            <i class="material-symbols-outlined" id="hamburger-icon">
+                menu
+            </i>
+        </button>
+    </nav>
+
+</header>
+
+<section id="actors-section">
+    <h1 id="actors-section-title">
+        Popular Actors
+    </h1>
+
+    <ul id="actors-list">
+        <li class="actor-item">
+            <a href="#">
+                <img class="actor-image" alt="actor image" src="">
+            </a>
+            <section class="actor-details">
+                <h1 class="actor-name">
+
+                </h1>
+                <p class="actor-movies">
+
+                </p>
+            </section>
+        </li>
+    </ul>
+</section>
+
+<footer id="footer">
+    <section id="footer-navigation-logo">
+        <section id="footer-logo-section">
+            <a href="index.html">
+                <img id="footer-logo" src="../images/logo/Cityflix.jpg" alt="logo">
+            </a>
+        </section>
+        <nav id="footer-navigation">
+            <ul class="footer-navigation-list">
+                <li class="footer-navigation-list-item">
+                    <a href="movies.html">Movies</a>
+                </li>
+                <li class="footer-navigation-list-item">
+                    <a href="actors.html">Actors</a>
+                </li>
+                <li class="footer-navigation-list-item">
+                    <a href="newsletter.html">Newsletter</a>
+                </li>
+                <li class="footer-navigation-list-item">
+                    <a href="contact-us.html"> Contact </a>
+                </li>
+                <li class="footer-navigation-list-item">
+                    <a href="about-us.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="footer-copyright-social">
+        <section id="footer-copyright">
+            <p id="footer-copyright-paragraph"> Copyright &copy; 2023 CityFlix</p>
+        </section>
+        <section class="footer-social">
+            <i class="social-media-icon fa fa-twitter"></i>
+            <i class="social-media-icon fa fa-facebook"></i>
+            <i class="social-media-icon fa fa-instagram"></i>
+        </section>
+    </section>
+</footer>
+
+<script type="module" src="../javascript/movieConstants.js"></script>
+<script type="module" src="../javascript/actors.js"></script>
+<script src="../javascript/header.js"></script>
+
+</body>
+</html>

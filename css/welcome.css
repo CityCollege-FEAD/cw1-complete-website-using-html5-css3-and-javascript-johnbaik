@@ -1,0 +1,120 @@
+#welcome-trailer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 60px;
+}
+#welcome-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+    background-color: black;
+    color: white;
+    height: 500px;
+}
+
+#welcome-header-1 {
+    padding-top: 5%;
+    padding-left: 8%;
+    font-size: 2.5vw;
+}
+
+#welcome-header-2 {
+    padding-left: 8%;
+    font-size: 1.5vw;
+}
+
+#welcome-trailer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 65%;
+    height: 500px;
+}
+
+#trailer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gradient {
+    display: flex;
+    flex-flow: row nowrap;
+    content: '';
+    position: absolute;
+    left: 35%;
+    width: 65%;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0) 50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+
+    #welcome-trailer-content {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+    }
+
+    #welcome-content {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45%;
+        background-color: black;
+        color: white;
+    }
+
+    #welcome-header-1 {
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #welcome-header-2 {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #welcome-trailer {
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #gradient {
+        top: 300px;
+        width: 100%;
+        left: auto;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 60%) 50%, rgba(0, 0, 0, 0) 70%);
+    }
+}
+
+@media screen and (max-width: 274px) {
+    #welcome-header-1 {
+        font-size: 14px;
+    }
+
+    #welcome-header-2 {
+        font-size: 11px;
+    }
+
+    #gradient {
+        top: 250px;
+    }
+}

@@ -1,0 +1,124 @@
+#movie-img-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 5%;
+}
+
+#movie-img {
+    width: 20%;
+    min-width: 200px;
+    max-width: 220px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#movie-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2%;
+    padding-right: 5%;
+    color: white;
+    width: 80%;
+}
+
+#movie-title {
+    width: 100%;
+}
+
+#movie-properties {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#movie-duration {
+    padding-right: 20px;
+}
+
+#movie-year {
+    padding-right: 20px;
+}
+
+#movie-type {
+    padding-right: 20px;
+}
+
+#movie-description {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#movie-trailer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    color: white;
+    padding-top: 80px;
+    padding-left: 5%;
+
+}
+
+#trailer-video {
+    padding-top: 20px;
+    width: 560px;
+    height: 315px;
+}
+
+#movie-actors-section {
+    padding-top: 80px;
+    padding-left: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+#movie-actors-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.movie-actor {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.actor-image {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.actor-name {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+
+    #movie-img-details {
+        flex-flow: column nowrap;
+    }
+
+    .actor-image {
+        max-width: 60px;
+    }
+
+    #trailer-video {
+        width: 90%;
+    }
+}

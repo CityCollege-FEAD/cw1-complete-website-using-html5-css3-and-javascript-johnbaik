@@ -1,0 +1,153 @@
+#filters {
+    display: none;
+    flex-flow: column nowrap;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 3;
+    background: none;
+    border-radius: 0 10px 10px 0;
+    height: auto
+}
+
+#filter-form {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    height: 100%;
+}
+
+#categories-filter-title {
+    color: #ffffff;
+}
+
+#category-filters {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#categories-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.category {
+    margin: 8px;
+}
+
+.category-span {
+    padding: 4px 6px 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: white;
+    background-color: #000000;
+
+}
+
+.category-input {
+    display: none;
+}
+
+#apply-cancel {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.submit-button {
+    margin-right: 15px;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+
+/* selects all of the text within the input element and changes the color of the text */
+.category-input + .category-span {
+    color: white;
+}
+
+/* This will declare how a selected input will look giving generic properties */
+.category-input:checked + .category-span {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#release-date-filter {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+#release-date-filter-title {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#release-dates-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.date-label {
+    margin-top: 20px;
+}
+
+.date {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+    #categories-filter-title {
+        font-size: 16px;
+    }
+
+    #release-date-filter-title {
+        font-size: 16px;
+    }
+
+    .category-span {
+        font-size: 12px;
+    }
+
+    #release-dates-section {
+        font-size: 12px;
+    }
+
+    #apply-button {
+        margin-top: 10px;
+    }
+
+    #cancel-button {
+        margin-top: 10px;
+    }
+}
+

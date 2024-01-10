@@ -1,0 +1,84 @@
+#actor-img-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 5%;
+}
+
+#actor-img {
+    width: 20%;
+    min-width: 200px;
+    max-width: 220px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#actor-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2%;
+    padding-right: 5%;
+    color: white;
+    width: 80%;
+}
+
+#actor-name {
+    width: 100%;
+}
+
+#actor-properties {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#actor-description {
+    width: 100%;
+    max-width: 700px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#plays-in-movies {
+    margin-top: 7%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 500px;
+    min-height: 200px;
+}
+
+#plays-in-movies-title {
+    display: flex;
+    padding-left: 20px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    #actor-img {
+        min-width: 100px;
+        max-width: 180px;
+    }
+
+    #actor-img-details {
+        flex-flow: column nowrap;
+    }
+
+    .actor-image {
+        max-width: 60px;
+    }
+
+    #actor-details {
+        font-size: 14px;
+    }
+}

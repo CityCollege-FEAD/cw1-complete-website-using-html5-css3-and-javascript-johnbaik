@@ -1,0 +1,140 @@
+#footer {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-top: 1px inset #3c3c3c;
+}
+
+#footer-navigation-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-logo-section {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5%;
+
+}
+
+#footer-logo {
+    width: 150px;
+    height: fit-content;
+}
+
+#footer-navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.footer-navigation-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.footer-navigation-list-item {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.footer-navigation-list-item > a:link {
+    color: #6b6b6b;
+}
+
+.footer-navigation-list-item > a:visited {
+    color: #6b6b6b;
+}
+
+#footer-copyright-social {
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#footer-copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width: 50%;
+    color: #ffffff;
+    margin-left: 5%;
+}
+
+.footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 50%;
+    color: #ffffff;
+    margin-right: 5%;
+    font-size: 24px;
+}
+
+.social-media-icon {
+    padding-left: 3%;
+    font-size: 24px;
+}
+
+.social-media-icon:hover {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 767px) {
+    #footer-logo {
+        width: 130px;
+    }
+
+    .social-media-icon {
+        padding-left: 6%;
+    }
+
+    #footer-copyright-paragraph {
+        font-size: 11px;
+    }
+
+    #footer-navigation {
+        width: 100%;
+    }
+
+    .footer-navigation-list {
+        width: 100%;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+    }
+
+    #footer-navigation-logo {
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+    #footer-logo-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #footer-copyright-social {
+        margin-top: 3%;
+    }
+}

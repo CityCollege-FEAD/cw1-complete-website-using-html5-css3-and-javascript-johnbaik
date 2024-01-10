@@ -1,0 +1,82 @@
+#actors-section {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 120px;
+}
+
+#actors-section-title {
+    color: white;
+}
+
+#actors-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.actor-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.actor-image {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.actor-item:hover {
+    scale: 1.03;
+    z-index: 2;
+    transition: all 0.5s;
+
+}
+
+#filter-button {
+    width: 40px;
+    color: white;
+    background-color:black ;
+    border:  none;
+}
+
+.actor-details {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+}
+
+.actor-name {
+    margin: 0;
+    font-size: 12px;
+}
+.actor-movies {
+    margin: 0;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    #actors-section {
+        align-items: center;
+    }
+    #actors-list {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+        .actor-name {
+        font-size: 11px;
+    }
+    .actor-movies {
+        font-size: 11px;
+    }
+    .actor-image {
+        max-width: 100px;
+    }
+}
