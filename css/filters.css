@@ -1,3 +1,4 @@
+/*Styles for the Filters Section */
 #filters {
     display: none;
     flex-flow: column nowrap;
@@ -15,7 +16,7 @@
 #filter-form {
     display: flex;
     flex-flow: column nowrap;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9); /*Opacity to 90% */
     width: 50%;
     align-items: center;
     justify-content: space-between;
@@ -80,12 +81,12 @@
     font-size: 16px;
 }
 
-/* selects all of the text within the input element and changes the color of the text */
+/*selects all the texts within the input element and changes the font color */
 .category-input + .category-span {
     color: white;
 }
 
-/* This will declare how a selected input will look giving generic properties */
+/*This will declare how a selected input will look giving generic properties */
 .category-input:checked + .category-span {
     color: #000000;
     background-color: #ffffff;

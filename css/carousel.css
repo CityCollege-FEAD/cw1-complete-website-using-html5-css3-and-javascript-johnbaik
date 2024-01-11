@@ -1,12 +1,14 @@
+/*Styles for the Carousel Container */
 .carousel {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+    flex-flow: row nowrap; /*Arrange items in a row */
+    align-items: center; /*Center items vertically */
+    justify-content: center; /*Center items horizontally */
     width: 100%;
     height: 100%;
 }
 
+/*Styles for the Left Carousel Button */
 .left-carousel-button {
     width: 5%;
     justify-content: center;
@@ -20,11 +22,12 @@
 }
 
 .left-carousel-button:hover {
-    scale: 1.8;
+    scale: 1.8; /*Scale on hover */
     color: white;
 
 }
 
+/*Styles for the Right Carousel Button */
 .right-carousel-button {
     height: 100%;
     width: 5%;
@@ -40,6 +43,7 @@
     scale: 1.8;
 }
 
+/*Styles for the Carousel Item List */
 .carousel-item-list {
     display: flex;
     flex-flow: row nowrap;
@@ -49,6 +53,7 @@
     padding: 0;
 }
 
+/*Styles for the Carousel Item */
 .carousel-item {
     display: flex;
     flex-flow: row nowrap;
@@ -66,6 +71,7 @@
     list-style-type: none;
 }
 
+/*Styles for the Hyperlink within Carousel Item */
 .carousel-item > a {
     display: flex;
     flex-flow: row nowrap;
@@ -73,9 +79,10 @@
     align-items: center;
 }
 
+/*Styles for the Span within the Hyperlink */
 a > span {
     display: flex;
-    position: absolute;
+    position: absolute; /*Absolute position to be iver the item */
     justify-content: center;
     align-items: center;
     opacity: 0;
@@ -87,22 +94,23 @@ a > span {
     color: white;
     max-width: 200px;
     min-width: 133px;
-    z-index: 2;
+    z-index: 2; /*Over the image */
 }
 
 a > span:hover {
     position: absolute;
-    opacity: 100%;
-    transition: all 0.5s;
+    opacity: 100%; /*Full opacity on hover */
+    transition: all 0.5s; /*Smooth Show up */
 }
 
+/*Hover effect for Carousel Item */
 .carousel-item:hover {
     scale: 1.04;
     transition: all 0.5s;
 }
 
 .movie-carousel-item-img {
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px; /*Rounded corners */
 
     height: 16vw;
     width: 10.6vw;

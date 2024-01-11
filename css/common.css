@@ -1,3 +1,4 @@
+/*Reset the default margin and padding for the html and the body elements */
 html, body {
     margin: 0;
     padding: 0;

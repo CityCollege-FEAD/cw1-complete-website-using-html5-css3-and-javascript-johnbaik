@@ -1,3 +1,4 @@
+/*Main container for the header */
 #header {
     display: flex;
     flex-flow: row nowrap;
@@ -11,6 +12,7 @@
     z-index: 3;
 }
 
+/*Container for the logo and search bar in the header */
 #header-logo-search {
     display: flex;
     flex-flow: row nowrap;
@@ -20,6 +22,7 @@
     justify-content: flex-start;
 }
 
+/*Search bar container */
 #search {
     margin-left: 20px;
     margin-right: 20px;
@@ -35,12 +38,14 @@
     flex-grow: 1;
 }
 
+/*Search icon */
 #searchIcon {
     margin-left: 20px;
     margin-right: 20px;
     width: 5%;
 }
 
+/*Input field for search */
 #search-input {
     text-align: left;
     height: 30px;
@@ -52,6 +57,7 @@
     background-color: #262626;
 }
 
+/*Close search bar button */
 #close-search-bar-button {
     display: none;
     background: #262626;
@@ -65,6 +71,7 @@
 
 }
 
+/*Header search list container */
 #header-search-list {
     display: none;
     flex-flow: column nowrap;
@@ -82,6 +89,7 @@
     border-radius: 10px 10px 10px 10px;
 }
 
+/*Container for the header navigation */
 #header-navbar {
     display: flex;
     flex-flow: row nowrap;
@@ -91,6 +99,7 @@
     width: 40%;
 }
 
+/*Header navigation list */
 #header-navbar-list {
     font-size: 16px;
     display: flex;
@@ -100,10 +109,12 @@
     padding: 0;
 }
 
+/*List item in the header navigation */
 #header-navbar-list > li {
     list-style-type: none;
 }
 
+/*Search button icon */
 #search-button {
     display: none;
     color: #ffffff;
@@ -111,10 +122,12 @@
     border: none;
 }
 
+/*Search button hover effect */
 #search-button:hover {
     transform: scale(1.1);
 }
 
+/*Logo image */
 #logo {
     margin: 10px;
     width: 120px;
@@ -131,6 +144,7 @@
     color: black;
 }
 
+/*Hamburger menu button */
 #hamburger-button {
     display: none;
     color: #ffffff;
@@ -142,16 +156,18 @@
     transform: scale(1.1);
 }
 
+/*Focus style for search input */
 #search-input:focus {
     border: 1px solid #555555;
     outline: none;
 }
 
-
+/*Section for movies search list */
 #movies-search-list-section {
     display: none;
 }
 
+/*Container for each header search item */
 .header-search-item-section {
     display: none;
     flex-flow: row nowrap;
@@ -161,6 +177,7 @@
     align-items: center;
 }
 
+/*Header search item */
 .header-search-item {
     display: none;
     max-height: 85px;
@@ -203,6 +220,7 @@
     align-items: start;
 }
 
+/*Media query for screens with a maximum width of 767px */
 @media screen and (max-width: 767px) {
 
     #header-navbar {
@@ -238,6 +256,7 @@
 
 }
 
+/*Media query for screens with a maximum width of 290px */
 @media screen and (max-width: 290px) {
     .navbar-list-item-ref {
         font-size: 12px;

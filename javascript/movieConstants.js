@@ -1,3 +1,9 @@
+/**
+ * In this file there are 2 const arrays with movies and actors.
+ * The allMoviesArray contains all the needed information to display the movie and also a list of actors ids who play in.
+ * The actors array contains all the useful information about actors and the movie ids which play in.
+ */
+
 const allMoviesArray = {
     0: {
         "id": 1,

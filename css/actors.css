@@ -1,6 +1,7 @@
+/*Styles for the Actors Section */
 #actors-section {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; /*Arrange children in a column */
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 120px;
@@ -10,10 +11,11 @@
     color: white;
 }
 
+/*Styles for the Actors List */
 #actors-list {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row wrap; /*Arrange children in a column */
+    justify-content: center; /*Center content horizontally */
     align-items: center;
     width: 90%;
 }
@@ -27,7 +29,7 @@
 }
 
 .actor-image {
-    border-radius: 50%;
+    border-radius: 50%; /*Cycle image*/
     max-width: 150px;
 }
 
@@ -45,6 +47,7 @@
     border:  none;
 }
 
+/*Styles for Actor Details */
 .actor-details {
     display: flex;
     flex-flow: column;
@@ -53,11 +56,11 @@
 }
 
 .actor-name {
-    margin: 0;
+    margin: 0; /*Remove margin */
     font-size: 12px;
 }
 .actor-movies {
-    margin: 0;
+    margin: 0; /*Remove margin */
     font-size: 12px;
 }
 

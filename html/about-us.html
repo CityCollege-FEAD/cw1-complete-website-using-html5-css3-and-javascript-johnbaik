@@ -16,20 +16,26 @@
 <body>
 
 <header class="header" id="header">
+    <!-- Header section that contains the logo and the search bar -->
     <section class="header-logo-search" id="header-logo-search">
         <a href="index.html">
             <img class="logo" id="logo" src="../images/logo/Cityflix.jpg" alt="logo">
         </a>
+        <!-- Search bar section -->
         <section class="search" id="search">
+            <!-- Search icon and input -->
             <i class="material-symbols-outlined" id="searchIcon"> search </i>
             <label for="search-input" hidden>
                 search
             </label>
             <input type="search" class="search-input" id="search-input" placeholder="Find Movies and Series">
+            <!-- Close search bar button -->
             <button class="close-search-bar-button" id="close-search-bar-button"
                     onclick="changeSearchVisibility()"><i class="material-symbols-outlined">close</i>
             </button>
+            <!-- Search results list -->
             <ul class="header-search-list" id="header-search-list">
+                <!-- static search result items -->
                 <li class="header-search-item">
                     <section class="header-search-item-section">
                         <img class="header-search-item-img" src="../images/movies/movies/movie0.webp" alt="movie 1">
@@ -126,6 +132,7 @@
         </section>
     </section>
 
+    <!-- Navigation bar -->
     <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-list" id="header-navbar-list">
             <li class="navbar-list-item">
@@ -141,6 +148,7 @@
                 <a class="navbar-list-item-ref" href="contact-us.html">Contact</a>
             </li>
         </ul>
+        <!-- Search and hamburger menu buttons -->
         <button class="search-button" id="search-button" onclick="changeSearchVisibility()">
             <i class="material-symbols-outlined">
                 search
@@ -155,49 +163,56 @@
 
 </header>
 
+<!-- About Us section -->
 <section id="about-us-section">
+    <!-- Image for About Us -->
     <img id="image-about" src="../images/about/about.jpg" alt="image">
+    <!-- Main content for About Us -->
     <section id="about-us">
+        <!-- Header title for About Us -->
         <h1 id="about-us-header-title">
             About&nbsp;Us
         </h1>
-        <article id="about-us-article">
-            <p>
-                Welcome to CityFlix, where the magic of movies meets the ease of streaming in the comfort of your own
-                space.<br><br>
+        <!-- content for About Us -->
+        <p id=about-us-paragraph>
+            Welcome to CityFlix, where the magic of movies meets the ease of streaming in the comfort of your own
+            space.<br><br>
 
-                At CityFlix, our passion for storytelling comes to life through an extensive collection of films that
-                cater to all tastes and moods.<br><br>
+            At CityFlix, our passion for storytelling comes to life through an extensive collection of films that
+            cater to all tastes and moods.<br><br>
 
-                Our user-friendly platform is designed with you in mind, ensuring a seamless and enjoyable cinematic
-                experience. Whether you're in the mood for timeless classics, gripping blockbusters, or indie treasures,
-                CityFlix is your go-to destination.<br><br>
+            Our user-friendly platform is designed with you in mind, ensuring a seamless and enjoyable cinematic
+            experience. Whether you're in the mood for timeless classics, gripping blockbusters, or indie treasures,
+            CityFlix is your go-to destination.<br><br>
 
-                Say goodbye to the hassles of traditional movie-watching – no more queues or parking struggles. With
-                CityFlix, your movie nights are simplified. Just log in, select your film, and immerse yourself in
-                uninterrupted entertainment. Our constantly updated catalog guarantees you're always in the know about
-                the latest releases and cinematic trends.<br><br>
+            Say goodbye to the hassles of traditional movie-watching – no more queues or parking struggles. With
+            CityFlix, your movie nights are simplified. Just log in, select your film, and immerse yourself in
+            uninterrupted entertainment. Our constantly updated catalog guarantees you're always in the know about
+            the latest releases and cinematic trends.<br><br>
 
-                CityFlix isn't just a streaming service; it's a community. Explore exclusive content, enjoy
-                behind-the-scenes features, and connect with fellow movie enthusiasts. Join us at CityFlix and be part
-                of an enriching cinematic journey that brings the joy of the silver screen directly to you. Welcome to a
-                world
-                where movies are more than just entertainment; they're an experience.
-            </p>
-        </article>
+            CityFlix isn't just a streaming service; it's a community. Explore exclusive content, enjoy
+            behind-the-scenes features, and connect with fellow movie enthusiasts. Join us at CityFlix and be part
+            of an enriching cinematic journey that brings the joy of the silver screen directly to you. Welcome to a
+            world
+            where movies are more than just entertainment; they're an experience.
+        </p>
 
 
     </section>
 
 </section>
 
+<!-- Footer section -->
 <footer id="footer">
+    <!-- Footer navigation and logo -->
     <section id="footer-navigation-logo">
+        <!-- Footer logo -->
         <section id="footer-logo-section">
             <a href="index.html">
                 <img id="footer-logo" src="../images/logo/Cityflix.jpg" alt="logo">
             </a>
         </section>
+        <!-- Footer navigation links -->
         <nav id="footer-navigation">
             <ul class="footer-navigation-list">
                 <li class="footer-navigation-list-item">
@@ -218,10 +233,13 @@
             </ul>
         </nav>
     </section>
+    <!-- Footer copyright and social media icons -->
     <section id="footer-copyright-social">
+        <!-- Copyright information -->
         <section id="footer-copyright">
             <p id="footer-copyright-paragraph"> Copyright &copy; 2023 CityFlix</p>
         </section>
+        <!-- Social media icons -->
         <section class="footer-social">
             <i class="social-media-icon fa fa-twitter"></i>
             <i class="social-media-icon fa fa-facebook"></i>

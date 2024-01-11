@@ -18,20 +18,26 @@
 
 <body>
 <header class="header" id="header">
+    <!-- Header section that contains the logo and the search bar -->
     <section class="header-logo-search" id="header-logo-search">
         <a href="index.html">
             <img class="logo" id="logo" src="../images/logo/Cityflix.jpg" alt="logo">
         </a>
+        <!-- Search bar section -->
         <section class="search" id="search">
+            <!-- Search icon and input -->
             <i class="material-symbols-outlined" id="searchIcon"> search </i>
             <label for="search-input" hidden>
                 search
             </label>
             <input type="search" class="search-input" id="search-input" placeholder="Find Movies and Series">
+            <!-- Close search bar button -->
             <button class="close-search-bar-button" id="close-search-bar-button"
                     onclick="changeSearchVisibility()"><i class="material-symbols-outlined">close</i>
             </button>
+            <!-- Search results list -->
             <ul class="header-search-list" id="header-search-list">
+                <!-- static search result items -->
                 <li class="header-search-item">
                     <section class="header-search-item-section">
                         <img class="header-search-item-img" src="../images/movies/movies/movie0.webp" alt="movie 1">
@@ -128,6 +134,7 @@
         </section>
     </section>
 
+    <!-- Navigation bar -->
     <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-list" id="header-navbar-list">
             <li class="navbar-list-item">
@@ -143,6 +150,7 @@
                 <a class="navbar-list-item-ref" href="contact-us.html">Contact</a>
             </li>
         </ul>
+        <!-- Search and hamburger menu buttons -->
         <button class="search-button" id="search-button" onclick="changeSearchVisibility()">
             <i class="material-symbols-outlined">
                 search
@@ -157,8 +165,10 @@
 
 </header>
 
+<!-- Welcome section with trailer -->
 <section id="welcome-trailer-content">
     <section id="welcome-content">
+        <!-- Welcome message -->
         <h1 id="welcome-header-1">Go ahead, stream freely
         </h1>
         <h2 id="welcome-header-2">Explore CityFlix for access to over 20,000 movies and shows at no cost, along with
@@ -166,6 +176,7 @@
         </h2>
     </section>
 
+    <!-- Video trailer section -->
     <section id="welcome-trailer">
         <div id='gradient'>
         </div>
@@ -176,17 +187,22 @@
     </section>
 </section>
 
+<!-- Section for top-rated movies with carousel -->
 <section id="top-rated-movies">
     <h1 id="top-rated-movies-title">
         Top Rated Movies
     </h1>
+    <!-- Carousel for top-rated movies -->
     <section class='carousel'>
+        <!-- Carousel left button -->
         <button class="left-carousel-button" list="top-carousel-item-list">
             <i class="material-symbols-outlined">
                 arrow_back_ios
             </i>
         </button>
+        <!-- Carousel item list -->
         <ul class="carousel-item-list" id="top-carousel-item-list">
+            <!-- Carousel items, more items are generated with Javascript (carousel.js) -->
             <li class="carousel-item">
                 <a href="">
                     <img class="movie-carousel-item-img" src="../images/movies/movies/movie0.webp" alt="movie 0"
@@ -194,7 +210,7 @@
                 </a>
             </li>
         </ul>
-
+        <!-- Carousel right button -->
         <button class="right-carousel-button" list="top-carousel-item-list">
             <i class="material-symbols-outlined">
                 arrow_forward_ios
@@ -203,10 +219,12 @@
     </section>
 </section>
 
+<!-- Section for new releases with carousel -->
 <section id="new-releases">
     <h1 id="new-releases-title">
         New Releases
     </h1>
+    <!-- Carousel for new releases -->
     <section class='carousel'>
         <button class="left-carousel-button" list="new-releases-carousel-item-list">
             <i class="material-symbols-outlined">
@@ -226,13 +244,17 @@
     </section>
 </section>
 
+<!-- Footer section -->
 <footer id="footer">
+    <!-- Footer navigation and logo -->
     <section id="footer-navigation-logo">
+        <!-- Footer logo -->
         <section id="footer-logo-section">
             <a href="index.html">
                 <img id="footer-logo" src="../images/logo/Cityflix.jpg" alt="logo">
             </a>
         </section>
+        <!-- Footer navigation links -->
         <nav id="footer-navigation">
             <ul class="footer-navigation-list">
                 <li class="footer-navigation-list-item">
@@ -253,10 +275,13 @@
             </ul>
         </nav>
     </section>
+    <!-- Footer copyright and social media icons -->
     <section id="footer-copyright-social">
+        <!-- Copyright information -->
         <section id="footer-copyright">
             <p id="footer-copyright-paragraph"> Copyright &copy; 2023 CityFlix</p>
         </section>
+        <!-- Social media icons -->
         <section class="footer-social">
             <i class="social-media-icon fa fa-twitter"></i>
             <i class="social-media-icon fa fa-facebook"></i>

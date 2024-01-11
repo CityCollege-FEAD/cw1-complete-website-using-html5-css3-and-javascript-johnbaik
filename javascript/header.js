@@ -12,7 +12,8 @@ const searchList = document.getElementById('header-search-list');
 
 const mobileSizeCondition = window.matchMedia("(min-width: 768px)");
 mobileSizeCondition.addEventListener("change", function (e) {
-    if (e.matches) {//desktop
+    //Change between desktop and mobile versions
+    if (e.matches) {//Default desktop style
         showNavigationMenu();
         showSearchBar();
         hideSearchButton();
@@ -20,7 +21,7 @@ mobileSizeCondition.addEventListener("change", function (e) {
         showHeaderNavbar();
         showLogo();
         hideHeaderSearchList();
-        searchInput.value = "";
+        searchInput.value = ""; //clean the search input
 
         //nav-menu-defaults
         showHorizontalNavBar()
@@ -29,8 +30,7 @@ mobileSizeCondition.addEventListener("change", function (e) {
         search.style.width = '100%';
         headerLogoSearch.style.width = '60%';
         headerLogoSearch.style.justifyContent = 'flex-start';
-        console.log('event-listener 768 desktop');
-    } else {//mobile
+    } else {//Mobile style
         hideNavigationMenu();
         hideSearchBar();
         showSearchButton();
@@ -38,21 +38,54 @@ mobileSizeCondition.addEventListener("change", function (e) {
         showHeaderNavbar();
         hideHeaderSearchList();
         searchInput.value = "";
-        console.log('event-listener 768 mobile');
     }
 });
 
+
+document.getElementById('search-input').addEventListener('input', function (e) {
+
+    if (e.target.value !== '') { //Pop-up the header search list
+        headerSearchList.style.display = "flex";
+
+        let headerSearchItemSections = document.getElementsByClassName('header-search-item-section');
+        for (let i = 0; i < headerSearchItemSections.length; i++) {//display every item
+            headerSearchItemSections[i].style.display = "flex";
+        }
+        let headerSearchItems = document.getElementsByClassName('header-search-item');
+        for (let i = 0; i < headerSearchItems.length; i++) {
+            headerSearchItems[i].style.display = "flex";
+        }
+
+        let headerSearchItemImages = document.getElementsByClassName('header-search-item-img');
+        for (let i = 0; i < headerSearchItemImages.length; i++) {
+            headerSearchItemImages[i].style.display = "flex";
+        }
+
+    } else {
+        headerSearchList.style.display = "none";
+    }
+
+});
+
+document.addEventListener('click', hideSearchListOnClickOutside);
+searchInput.addEventListener('click', (event) => {
+    //Stop the propagation of hiding when you click outside the list
+    event.stopPropagation();
+});
+
+
 function showVerticalNavBar() {
+
+    //Changes to style should apply in order to show to menu vertically
     headerNavbarList.style.flexFlow = 'column nowrap'
     headerNavbarList.style.justifyContent = 'flex-start'
     hamburgerButton.style.scale = '1.2';
-    headerNavbarList.style.position = 'fixed';
+    headerNavbarList.style.position = 'fixed';//Keep the menu open in the same position
     headerNavbarList.style.zIndex = '2';
     headerNavbarList.style.backgroundColor = 'rgba(0,0,0, 0.9)';
     headerNavbarList.style.height = '100%';
     headerNavbarList.style.width = '35%';
     headerNavbarList.style.top = '40px';
-    // headerNavbarList.style.fontSize = '16px';
 
     let navbarListItems = document.getElementsByClassName('navbar-list-item');
     for (let i = 0; i < navbarListItems.length; i++) {
@@ -77,7 +110,6 @@ function showHorizontalNavBar() {
     headerNavbarList.style.zIndex = '0';
     headerNavbarList.style.backgroundColor = 'rgba(1,1,1,1)';
     headerNavbarList.style.width = '100%';
-    // headerNavbarList.style.fontSize = '16px';
     let navbarListItems = document.getElementsByClassName('navbar-list-item');
     for (let i = 0; i < navbarListItems.length; i++) {
         navbarListItems[i].style.top = '0%';
@@ -93,12 +125,10 @@ function showHorizontalNavBar() {
 }
 
 function changeHamburgerMenuVisibility() {
-    console.log('changeHamburgerMenuVisibility');
-
     headerNavbarList.style.display = headerNavbarList.style.display === 'flex' ? 'none' : 'flex';
+    hamburgerIcon.innerHTML = hamburgerIcon.innerHTML.replace(/\s/g, '') === "menu" ? "close" : "menu"; //There was a bug with white characters
 
-    hamburgerIcon.innerHTML = hamburgerIcon.innerHTML.replace(/\s/g, '') === "menu" ? "close" : "menu";
-    if (hamburgerIcon.innerHTML.replace(/\s/g, '') === 'close') { // the side menu is open
+    if (hamburgerIcon.innerHTML.replace(/\s/g, '') === 'close') { //the side menu is open
         showVerticalNavBar();
     } else {
         showHorizontalNavBar();
@@ -174,40 +204,9 @@ function hideHeaderSearchList() {
     headerSearchList.style.display = 'none';
 }
 
-document.getElementById('search-input').addEventListener('input', function (e) {
-    if (e.target.value !== '') {
-
-        headerSearchList.style.display = "flex";
-
-        let headerSearchItemSections = document.getElementsByClassName('header-search-item-section');
-        for (let i = 0; i < headerSearchItemSections.length; i++) {
-            headerSearchItemSections[i].style.display = "flex";
-        }
-        let headerSearchItems = document.getElementsByClassName('header-search-item');
-        for (let i = 0; i < headerSearchItems.length; i++) {
-            headerSearchItems[i].style.display = "flex";
-        }
-
-        let headerSearchItemImages = document.getElementsByClassName('header-search-item-img');
-        for (let i = 0; i < headerSearchItemImages.length; i++) {
-            headerSearchItemImages[i].style.display = "flex";
-        }
-
-    } else {
-        headerSearchList.style.display = "none";
-    }
-
-});
-
 function hideSearchListOnClickOutside(event) {
     if (!searchList.contains(event.target) && event.target !== searchInput) {
         hideHeaderSearchList();
         searchInput.value = "";
     }
 }
-
-document.addEventListener('click', hideSearchListOnClickOutside);
-searchInput.addEventListener('click', (event) => {
-    // Stop the click event propagation to prevent it from immediately hiding the list
-    event.stopPropagation();
-});

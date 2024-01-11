@@ -1,24 +1,27 @@
+/*Styles for the Actor Image Details Section */
 #actor-img-details {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    flex-flow: row nowrap; /*Arrange children in a single row */
+    justify-content: flex-start; /*Align content at the left */
+    align-items: center; /*Center items vertically */
     padding-top: 120px;
     padding-left: 5%;
 }
 
+/*Styles for the Actor Image */
 #actor-img {
     width: 20%;
     min-width: 200px;
     max-width: 220px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;  /*Rounded corners */
 }
 
+/*Styles for the Actor Details Section */
 #actor-details {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: column nowrap; /*Arrange children in a column */
+    justify-content: flex-start; /*Align content at the top */
+    align-items: flex-start; /*Align items at the left */
     padding-left: 2%;
     padding-right: 5%;
     color: white;
@@ -31,7 +34,7 @@
 
 #actor-properties {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /*Allow items to wrap to the next line */
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
@@ -44,6 +47,7 @@
     text-align: justify;
 }
 
+/*Styles for the Plays in Movies Section */
 #plays-in-movies {
     margin-top: 7%;
     display: flex;
@@ -64,6 +68,7 @@
     width: 100%;
 }
 
+/*Media Query for Responsive Design */
 @media screen and (max-width: 767px) {
     #actor-img {
         min-width: 100px;
@@ -75,7 +80,7 @@
     }
 
     .actor-image {
-        max-width: 60px;
+        max-width: 60px; /*Maximum width for actor images */
     }
 
     #actor-details {

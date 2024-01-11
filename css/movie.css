@@ -1,3 +1,4 @@
+/*Container for the movie image and details section */
 #movie-img-details {
     display: flex;
     flex-flow: row nowrap;
@@ -13,7 +14,7 @@
     max-width: 220px;
     border-radius: 10px 10px 10px 10px;
 }
-
+/*Container for movie details */
 #movie-details {
     display: flex;
     flex-flow: column nowrap;
@@ -28,7 +29,7 @@
 #movie-title {
     width: 100%;
 }
-
+/*Container for movie properties */
 #movie-properties {
     display: flex;
     flex-flow: row wrap;
@@ -55,7 +56,7 @@
     padding-top: 20px;
     text-align: justify;
 }
-
+/*Trailer video */
 #movie-trailer {
     display: flex;
     flex-flow: column nowrap;

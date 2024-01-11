@@ -15,20 +15,26 @@
 <body>
 
 <header class="header" id="header">
+    <!-- Header section that contains the logo and the search bar -->
     <section class="header-logo-search" id="header-logo-search">
         <a href="index.html">
             <img class="logo" id="logo" src="../images/logo/Cityflix.jpg" alt="logo">
         </a>
+        <!-- Search bar section -->
         <section class="search" id="search">
+            <!-- Search icon and input -->
             <i class="material-symbols-outlined" id="searchIcon"> search </i>
             <label for="search-input" hidden>
                 search
             </label>
             <input type="search" class="search-input" id="search-input" placeholder="Find Movies and Series">
+            <!-- Close search bar button -->
             <button class="close-search-bar-button" id="close-search-bar-button"
                     onclick="changeSearchVisibility()"><i class="material-symbols-outlined">close</i>
             </button>
+            <!-- Search results list -->
             <ul class="header-search-list" id="header-search-list">
+                <!-- static search result items -->
                 <li class="header-search-item">
                     <section class="header-search-item-section">
                         <img class="header-search-item-img" src="../images/movies/movies/movie0.webp" alt="movie 1">
@@ -125,6 +131,7 @@
         </section>
     </section>
 
+    <!-- Navigation bar -->
     <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-list" id="header-navbar-list">
             <li class="navbar-list-item">
@@ -140,6 +147,7 @@
                 <a class="navbar-list-item-ref" href="contact-us.html">Contact</a>
             </li>
         </ul>
+        <!-- Search and hamburger menu buttons -->
         <button class="search-button" id="search-button" onclick="changeSearchVisibility()">
             <i class="material-symbols-outlined">
                 search
@@ -154,7 +162,9 @@
 
 </header>
 
+<!-- Newsletter Section -->
 <section id="newsletter-section">
+    <!-- Newsletter Form -->
     <form id="newsletter-form" onsubmit="return subscribe()" autocomplete="off">
         <h1 id="h1-newsletter">
             Subscribe to your Newsletter
@@ -162,13 +172,13 @@
         <h2 id="h2-newsletter">
             Dive into the latest at CityFlix! Expect exciting emails unveiling new movies and exclusive releases.
         </h2>
-
+        <!-- Email Input Section -->
         <section id="email-input-section">
             <i class="fa fa-envelope-o input-icon" aria-hidden="true"></i>
             <label for="email" hidden>email</label>
             <input type="email" id="email" name="" placeholder="Email">
         </section>
-
+        <!-- Terms and Conditions Input Section -->
         <section id="terms-and-cond-input-section">
             <a href="#">
                 Accept terms and conditions
@@ -176,20 +186,24 @@
             <label for="terms-and-conditions" hidden>Accept terms and conditions</label>
             <input type="checkbox" id="terms-and-conditions" name="terms and conditions">
         </section>
-
+        <!-- Subscribe and Unsubscribe Buttons -->
         <input id="submit-button" type="submit" value="Subscribe">
         <input id="unsubscribe-button" type="button" value="Unsubscribe" onclick="unsubscribe()">
     </form>
 
 </section>
 
+<!-- Footer section -->
 <footer id="footer">
+    <!-- Footer navigation and logo -->
     <section id="footer-navigation-logo">
+        <!-- Footer logo -->
         <section id="footer-logo-section">
             <a href="index.html">
                 <img id="footer-logo" src="../images/logo/Cityflix.jpg" alt="logo">
             </a>
         </section>
+        <!-- Footer navigation links -->
         <nav id="footer-navigation">
             <ul class="footer-navigation-list">
                 <li class="footer-navigation-list-item">
@@ -210,10 +224,13 @@
             </ul>
         </nav>
     </section>
+    <!-- Footer copyright and social media icons -->
     <section id="footer-copyright-social">
+        <!-- Copyright information -->
         <section id="footer-copyright">
             <p id="footer-copyright-paragraph"> Copyright &copy; 2023 CityFlix</p>
         </section>
+        <!-- Social media icons -->
         <section class="footer-social">
             <i class="social-media-icon fa fa-twitter"></i>
             <i class="social-media-icon fa fa-facebook"></i>

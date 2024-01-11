@@ -1,7 +1,6 @@
-body {
-
-}
-
+/*Styles for the newsletter section
+   Flex container for vertical layout
+*/
 #newsletter-section {
     display: flex;
     flex-flow: column;
@@ -17,19 +16,21 @@ body {
     background-repeat: no-repeat;
     min-height: 500px;
 }
-
+/*Main heading in the newsletter section */
 #h1-newsletter {
     font-size: 25px;
     width: 90%;
     text-align: center;
 }
-
+/*Secondary heading in the newsletter section */
 #h2-newsletter {
     font-size: 20px;
     width: 90%;
     text-align: center;
 }
-
+/*Styles for the newsletter form container.
+ Flex container for vertical layout
+ */
 #newsletter-form {
     margin-top: 50px;
     display: flex;
@@ -57,6 +58,7 @@ a {
     color: #ffffff;
 }
 
+/*Styles for visited and active state of anchor */
 a:visited,
 a:active {
     color: #ffffff;
@@ -64,6 +66,7 @@ a:active {
 
 #email-input-section {
     width: 40%;
+    /*Flex container for horizontal layout */
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;

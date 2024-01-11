@@ -1,3 +1,4 @@
+/*Container for the top-rated movies section */
 #top-rated-movies {
     margin-top: 7%;
     display: flex;
@@ -8,6 +9,7 @@
     min-height: 200px;
 }
 
+/*Title for the top-rated movies section */
 #top-rated-movies-title {
     display: flex;
     padding-left: 20px;
@@ -18,6 +20,7 @@
     width: 100%;
 }
 
+/*Container for the new releases section */
 #new-releases {
     margin-top: 7%;
     display: flex;
@@ -28,6 +31,7 @@
     min-height: 200px;
 }
 
+/*Title for the new releases section */
 #new-releases-title {
     padding-left: 20px;
     display: flex;

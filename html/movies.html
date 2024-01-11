@@ -16,20 +16,26 @@
 </head>
 <body>
 <header class="header" id="header">
+    <!-- Header section that contains the logo and the search bar -->
     <section class="header-logo-search" id="header-logo-search">
         <a href="index.html">
             <img class="logo" id="logo" src="../images/logo/Cityflix.jpg" alt="logo">
         </a>
+        <!-- Search bar section -->
         <section class="search" id="search">
+            <!-- Search icon and input -->
             <i class="material-symbols-outlined" id="searchIcon"> search </i>
             <label for="search-input" hidden>
                 search
             </label>
             <input type="search" class="search-input" id="search-input" placeholder="Find Movies and Series">
+            <!-- Close search bar button -->
             <button class="close-search-bar-button" id="close-search-bar-button"
                     onclick="changeSearchVisibility()"><i class="material-symbols-outlined">close</i>
             </button>
+            <!-- Search results list -->
             <ul class="header-search-list" id="header-search-list">
+                <!-- static search result items -->
                 <li class="header-search-item">
                     <section class="header-search-item-section">
                         <img class="header-search-item-img" src="../images/movies/movies/movie0.webp" alt="movie 1">
@@ -126,6 +132,7 @@
         </section>
     </section>
 
+    <!-- Navigation bar -->
     <nav class="header-navbar" id="header-navbar">
         <ul class="header-navbar-list" id="header-navbar-list">
             <li class="navbar-list-item">
@@ -141,6 +148,7 @@
                 <a class="navbar-list-item-ref" href="contact-us.html">Contact</a>
             </li>
         </ul>
+        <!-- Search and hamburger menu buttons -->
         <button class="search-button" id="search-button" onclick="changeSearchVisibility()">
             <i class="material-symbols-outlined">
                 search
@@ -155,18 +163,21 @@
 
 </header>
 
+<!-- Filters Section -->
 <section id="filters">
+    <!-- Filters Form -->
     <form id="filter-form" onsubmit="return applyFilters(
         document.getElementById('action-checkbox'),
         document.getElementById('from-date'),
         document.getElementById('to-date')
     )">
+        v
         <section id="category-filters">
-
             <h1 id="categories-filter-title">
                 Categories
             </h1>
             <section id="categories-section">
+                <!-- Individual category checkbox filter -->
                 <section class="category">
                     <label>
                         <input class="category-input" type="checkbox" value="action">
@@ -194,6 +205,7 @@
             </section>
         </section>
 
+        <!-- Release Date Filters -->
         <section id="release-date-filter">
             <h1 id="release-date-filter-title">
                 Release Date
@@ -208,25 +220,29 @@
             </section>
         </section>
 
+        <!-- Apply and Cancel Buttons -->
         <section id="apply-cancel">
-            <input id = "apply-button" class="submit-button" type="submit" value="Apply Filters">
+            <input id="apply-button" class="submit-button" type="submit" value="Apply Filters">
             <input id="cancel-button" class="submit-button" type="submit" value="Cancel">
         </section>
 
     </form>
 </section>
 
+<!-- Movies Section -->
 <section id="movies-section">
     <h1 id="movies-section-title">
         All Movies
     </h1>
-
-    <label for ="filter-button" id = "label-filter-button">Filters
+    <!-- Filter Button -->
+    <label for="filter-button" id="label-filter-button">Filters
     </label>
     <button id="filter-button" class="material-symbols-outlined">
         filter_list
     </button>
+    <!-- List of Movies -->
     <ul id="movies-list">
+        <!-- Each item is generated using javascript -->
         <li class="movie-item">
             <a href="#">
                 <img class="movie-image" alt="movie image" src="">
@@ -243,13 +259,17 @@
     </ul>
 </section>
 
+<!-- Footer section -->
 <footer id="footer">
+    <!-- Footer navigation and logo -->
     <section id="footer-navigation-logo">
+        <!-- Footer logo -->
         <section id="footer-logo-section">
             <a href="index.html">
                 <img id="footer-logo" src="../images/logo/Cityflix.jpg" alt="logo">
             </a>
         </section>
+        <!-- Footer navigation links -->
         <nav id="footer-navigation">
             <ul class="footer-navigation-list">
                 <li class="footer-navigation-list-item">
@@ -270,10 +290,13 @@
             </ul>
         </nav>
     </section>
+    <!-- Footer copyright and social media icons -->
     <section id="footer-copyright-social">
+        <!-- Copyright information -->
         <section id="footer-copyright">
             <p id="footer-copyright-paragraph"> Copyright &copy; 2023 CityFlix</p>
         </section>
+        <!-- Social media icons -->
         <section class="footer-social">
             <i class="social-media-icon fa fa-twitter"></i>
             <i class="social-media-icon fa fa-facebook"></i>
